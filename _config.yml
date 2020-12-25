@@ -23,9 +23,9 @@ plainwhite:
   analytics_id: G-TH0WSKB02P
   navigation:
     - title: Java
-      url: "/category/Java"
+      url: "/category/Java.html"
     - title: Javascript
-      url: "/category/Javascript" 
+      url: "/category/Javascript.html" 
   condensed_mobile:
     #- home
     - page
