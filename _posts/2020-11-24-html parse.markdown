@@ -3,6 +3,7 @@ layout: post
 title:  "HTML paresing"
 date:   2020-11-24 08:57:00 +0530
 categories: Java
+comments: true
 ---
 
 jsoup 은 html parse 라이브러리

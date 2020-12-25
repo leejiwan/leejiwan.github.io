@@ -3,6 +3,7 @@ layout: post
 title:  "JAVA interface, 추상클래스 차이"
 date:   2020-11-04 17:23:00 +0530
 categories: Java
+comments: true
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title:  "static(정적)"
 date:   2020-12-01 16:55:00 +0530
 categories: Java
+comments: true
 ---
 static(정적)
 - static 으로 선헌한 어떠한 값이 메모리가 할당되어 프로그램이 끝날 때 까지 그 메모리 값이 유지된다

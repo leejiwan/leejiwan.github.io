@@ -3,6 +3,7 @@ layout: post
 title:  "Collection"
 date:   2020-11-04 17:05:00 +0530
 categories: Java
+comments: true
 ---
 1. Set  : 순서를 유지하지 않는 데이터의 집합, 데이터의 중복을 허용하지 않는다.
 

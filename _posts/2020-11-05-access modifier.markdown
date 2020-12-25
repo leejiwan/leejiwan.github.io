@@ -3,6 +3,7 @@ layout: post
 title:  "접근제어자 개념"
 date:   2020-11-25 21:23:00 +0530
 categories: Java
+comments: true
 ---
 - public : 외부 공개 어디서든 접근가능
 
