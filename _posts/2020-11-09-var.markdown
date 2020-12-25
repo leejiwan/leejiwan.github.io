@@ -3,6 +3,7 @@ layout: post
 title:  "var, let, const"
 date:   2020-11-09 14:44:00 +0530
 categories: Javascript
+comments: false
 ---
 
 var
