@@ -3,6 +3,7 @@ layout: post
 title:  "super"
 date:   2020-12-09 14:44:00 +0530
 categories: Java
+comments: true
 ---
 
 - super 키워드를 사용할 시 부모 클래스의 변수를 참조함
