@@ -3,12 +3,19 @@ function weatherData(obj) {
     /* https://openweathermap.org/API */
     var url = 'https://api.openweathermap.org/data/2.5/weather';
     var appid = '23049ab1a6aab8c1e8771c11d2080f0b';
+    var dataObj;
+    if(obj == undefined) {
+        /* 위치설정 안할 시 deault 서울 */
+        dataObj = {'q':'Seoul', 'appid':appid};
+    }else {
+        dataObj = {'lat':obj.latitude, 'lon':obj.longitude, 'appid':appid};
+    }
     $.ajax({
         url: url,
         dataType: "json",
         type: "GET",
         async: "false",
-        data : {'lat':obj.latitude, 'lon':obj.longitude, 'appid':appid},
+        data : dataObj,
         success: function(data) {
             var icon;
             switch(data.weather[0].icon) {
@@ -71,7 +78,7 @@ function weatherData(obj) {
             var temp = Math.round(data.main.temp- 273.15);
             var $weatherDiv = $('div.weather');
             var $weatherLocation = $('<span>').addClass('weatherCity').appendTo($weatherDiv); 
-            var $weatherIcon = $('<img>').attr('src','/assets/weatherIcons/'+icon).css({'width':'25px', 'margin-bottom':'1px'}).appendTo($weatherDiv); 
+            var $weatherIcon = $('<img>').attr('src','/assets/weatherIcons/'+icon).css({'width':'25px', 'margin':'1px 3px 0px 3px'}).appendTo($weatherDiv); 
             var $weatherTemp = $('<span>').addClass('weatherTemp').appendTo($weatherDiv); 
            
             $weatherLocation.html(data.name +',&nbsp;'+ data.sys.country);     
@@ -87,7 +94,7 @@ function myLocation() {
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(success, fail);
     }else {
-        alert('위치 정보를 가져올 수 없습니다');
+        weatherData();
     }
     
 }
@@ -100,6 +107,6 @@ function success(data) {
 }
 /* 위치정보 fail */
 function fail(data) {
-    alert('위치 정보를 가져올 수 없습니다');
+    weatherData();
 }   
 myLocation();
