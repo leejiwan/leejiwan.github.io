@@ -1,7 +1,7 @@
 /* 날씨 정보 */
 function weatherData(obj) {
     /* https://openweathermap.org/API */
-    var url = 'http://api.openweathermap.org/data/2.5/weather';
+    var url = 'https://api.openweathermap.org/data/2.5/weather';
     var appid = '23049ab1a6aab8c1e8771c11d2080f0b';
     $.ajax({
         url: url,
