@@ -1,20 +1,123 @@
----
-layout: null
-sitemap:
-  exclude: 'yes'
----
 [
-  {% for post in site.posts %}
+  
     {
-      "title"    : "{{ post.title | escape }}",
-      "title-lower"    : "{{ post.title | escape | downcase}}",
-      "sub-titile" : "{{ post.subtitle | escape }}",
-      "sub-titile-lower" : "{{ post.subtitle | escape | downcase}}",
-      "categories" : "{{ post.categories }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}",
-      "content"     : "{{ post.content | strip_html | strip_newlines | remove_chars | escape | truncate:200 }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "Servlet 생명주기",
+      "title-lower"    : "servlet 생명주기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Was",
+      "tags"     : "",
+      "url"      : "/2020/12/",
+      "date"     : "2020-12-24 19:45:00 +0900",
+      "content"     : "  Servlet 동작원리      Servlet Container      클라이언트가 요청을 보내면 HTTP Request를 Servlet Conatiner로 전송        HttpServletRequest, HttpServletResponse 두 객체를 생성        web.xml에 해당 요청에 해당하는 servlet을 메모리에 올림 (i..."
+    } ,
+  
+    {
+      "title"    : "super",
+      "title-lower"    : "super",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/12/",
+      "date"     : "2020-12-09 18:14:00 +0900",
+      "content"     : "  super 키워드를 사용할 시 부모 클래스의 변수를 참조함  같은 변수같은 경우 String color의 경우는 자식 클래스의 지역변수를 출력함class car{	int engine = 3;	int wheel = 2;	String color = &quot;gray&quot;;}class sonata extends car{	String color =..."
+    } ,
+  
+    {
+      "title"    : "제네릭(Generic)",
+      "title-lower"    : "제네릭(generic)",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/12/",
+      "date"     : "2020-12-09 17:21:00 +0900",
+      "content"     : "  클래스 내부에서 사용할 데이터 타입을 인스턴스 생성 시 지정해 줄 수 있다package com.kcube.test;import java.util.HashMap;class staticTest&amp;lt;G&amp;gt;{	G info;	HashMap&amp;lt;Integer, G&amp;gt; map1 = new HashMap&amp;lt;Int..."
+    } ,
+  
+    {
+      "title"    : "static(정적)",
+      "title-lower"    : "static(정적)",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/12/",
+      "date"     : "2020-12-01 20:25:00 +0900",
+      "content"     : "static(정적)  static 으로 선헌한 어떠한 값이 메모리가 할당되어 프로그램이 끝날 때 까지 그 메모리 값이 유지된다static(정적) 변수  인스턴스 변수는 인스턴스가 생성될 때마다 생성되므로 각기 다른값을 가진다  하지만 static 변수는 생성 된 모든 인스턴스에서 하나의 저장공간을 공유하기에 항상 같은 값을 가진다 ​ex1)class ..."
+    } ,
+  
+    {
+      "title"    : "접근제어자 개념",
+      "title-lower"    : "접근제어자 개념",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/11/",
+      "date"     : "2020-11-26 00:53:00 +0900",
+      "content"     : "      public : 외부 공개 어디서든 접근가능        private : 선언 된 클래스 안에서 사용 외부에서 접근 불가(정보은닉)        default : 같은 패키지 내에서 접근가능 외부 패키지에서 접근 불가        protect : 같은 패키지내에서는 모두 접근이 가능하나 다른패키지에서는 자식클래스만 접근 가능  ​"
+    } ,
+  
+    {
+      "title"    : "HTML paresing",
+      "title-lower"    : "html paresing",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/11/",
+      "date"     : "2020-11-24 12:27:00 +0900",
+      "content"     : "jsoup 은 html parse 라이브러리Dom구조를 추적하여 원하는 정보를 찾아올 수 있다라이브러리 다운로드	JSONArray getATagValue(String str)	{		// content html parsing		Document doc = Jsoup.parse(str);		Elements aTag = doc.select(&quot;a&qu..."
+    } ,
+  
+    {
+      "title"    : "var, let, const",
+      "title-lower"    : "var, let, const",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Javascript",
+      "tags"     : "",
+      "url"      : "/2020/11/",
+      "date"     : "2020-11-09 18:14:00 +0900",
+      "content"     : "var  var 함수 스코프 변수 선언 시 사용          함수밖에서 사용하면 전역, 함수안에서 사용하면 지역으로 사용        재선언, 재할당이 가능var a = 1;var a = 2;console.log(a) // 2let  블록단위에서 유효범위를 가짐({} 경계로 블록 구분)if(flag = true) {	let a = 0;}  재선언이..."
+    } ,
+  
+    {
+      "title"    : "JAVA interface, 추상클래스 차이",
+      "title-lower"    : "java interface, 추상클래스 차이",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/11/",
+      "date"     : "2020-11-04 20:53:00 +0900",
+      "content"     : "1.공통점  메소드가 선언만 되어있고 구현은 안되있음​2.차이점abstract  상속방법  extends  일부는 구현된 메소드도 있고, abstract라고 붙어있는 메소드는 구현이 안되어있다.-상속받아 기능 확장을 목적​interface  상속방법 implements  다중상속 가능  인터페이스에 선언되있는 메소를 모두 구현해야함  구현하는 객체가 ..."
+    } ,
+  
+    {
+      "title"    : "Collection",
+      "title-lower"    : "collection",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/11/",
+      "date"     : "2020-11-04 20:35:00 +0900",
+      "content"     : "      Set  : 순서를 유지하지 않는 데이터의 집합, 데이터의 중복을 허용하지 않는다.    1-1.HashSet          가장빠른 임의 접근 속도      순서를 예측 불가        1-2.TreeSet          정렬방법을 지정할 수 있음            List  : 순서가 있는 데이터의 집합, 데이터의 중복을 허용한다..."
+    } ,
+  
+    {
+      "title"    : "프로세스와 스레드",
+      "title-lower"    : "프로세스와 스레드",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Java",
+      "tags"     : "",
+      "url"      : "/2020/11/",
+      "date"     : "2020-11-04 17:56:00 +0900",
+      "content"     : "1.프로세스  컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램  메모리에 올라와 실행되고 있는 프로그램의 인스턴스(독립적인 개체)2.스레드  프로세스 내에 실행되고 있는 여러흐름의 단위  프로세스가 할당받은 자원을 이용하는 실행의 단위"
+    } 
+  
 ]
