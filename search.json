@@ -1,11 +1,23 @@
 [
   
     {
+      "title"    : "OpenWeatherMap",
+      "title-lower"    : "openweathermap",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Javascript",
+      "tags"     : "",
+      "url"      : "/weather/",
+      "date"     : "2020-12-27 18:40:00 +0900",
+      "content"     : "      오픈 API를 이용한 날씨 정보 가져오는 예제 코드(위치 및 아이콘 변경 코드는 제거)        https://openweathermap.org 에서 apiKey 발급        날씨 아이콘은 https://erikflowers.github.io/weather-icons 에서 무료로 사용가능하다        웹 사이트 위치 엑세스를 허..."
+    } ,
+  
+    {
       "title"    : "Servlet 생명주기",
       "title-lower"    : "servlet 생명주기",
       "sub-titile" : "",
       "sub-titile-lower" : "",
-      "categories" : "Was",
+      "categories" : "Was,Java",
       "tags"     : "",
       "url"      : "/servlet/",
       "date"     : "2020-12-24 19:45:00 +0900",

@@ -14,7 +14,7 @@ function weatherData(obj) {
         url: url,
         dataType: "json",
         type: "GET",
-        async: "false",
+        async: "true",
         data : dataObj,
         success: function(data) {
             var icon;
