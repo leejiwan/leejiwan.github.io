@@ -1,76 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+---
+layout: null
+---
+{%-if site.plainwhite.sitemap -%}
+    <?xml version="1.0" encoding="UTF-8"?>
     <urlset
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
         <url>
-            <loc>http://localhost:4000</loc>
-	    <lastmod>2021-01-16T17:45:32+09:00</lastmod>
+            <loc>{{ site.baseurl }}</loc>
+	    <lastmod>{{ 'now' | date_to_xmlschema }}</lastmod>
             <priority>1.00</priority>
-        </url><url>
-                <loc>http://localhost:4000/codinTest(sort)/</loc>
-                <lastmod>2021-01-09T13:51:00+09:00</lastmod>
+        </url>
+        {%- for post in site.posts -%}
+            <url>
+                <loc>{{ site.baseurl }}{{ post.url }}</loc>
+                <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
                 <changefreq>weekly</changefreq>
                 <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/interview_bgf/</loc>
-                <lastmod>2020-12-28T23:45:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/weather/</loc>
-                <lastmod>2020-12-27T18:40:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/servlet/</loc>
-                <lastmod>2020-12-24T19:45:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/super/</loc>
-                <lastmod>2020-12-09T18:14:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/generic/</loc>
-                <lastmod>2020-12-09T17:21:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/static/</loc>
-                <lastmod>2020-12-01T20:25:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/access-modifier/</loc>
-                <lastmod>2020-11-26T00:53:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/html-parse/</loc>
-                <lastmod>2020-11-24T12:27:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/var/</loc>
-                <lastmod>2020-11-09T18:14:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/abstract/</loc>
-                <lastmod>2020-11-04T20:53:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/collection/</loc>
-                <lastmod>2020-11-04T20:35:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url><url>
-                <loc>http://localhost:4000/process/</loc>
-                <lastmod>2020-11-04T17:56:00+09:00</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.80</priority>
-            </url></urlset>
+            </url>
+        {%- endfor -%}
+    </urlset>    
+{%- endif -%}
