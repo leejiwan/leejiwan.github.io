@@ -1,13 +1,25 @@
 [
   
     {
+      "title"    : "kakao api",
+      "title-lower"    : "kakao api",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Javascript",
+      "tags"     : "",
+      "url"      : "/kakaoApi/",
+      "date"     : "2022-01-03 17:13:00 +0900",
+      "content"     : "  kakao 오픈 API 이용 및 테스트  kakao api 키 확인      postman으로 통신 확인-쿼리스트링 SET    -키 값 SET    -OUT 확인    var kakaoAuth = &quot;&quot;; //kakao restApikeyfunction loadDoc() {  $.ajax({    method: &quot;GET&..."
+    } ,
+  
+    {
       "title"    : "K 번째 수",
       "title-lower"    : "k 번째 수",
       "sub-titile" : "",
       "sub-titile-lower" : "",
       "categories" : "Java",
       "tags"     : "",
-      "url"      : "/codinTest(sort)/",
+      "url"      : "/codinTest(sort)-copy/",
       "date"     : "2021-01-09 13:51:00 +0900",
       "content"     : "  K 번째 수 —- &amp;gt; 문제  풀이 ↓import java.util.ArrayList;import java.util.Arrays;import java.util.List;class Solution {    public int[] solution(int[] array, int[][] commands) {		List&amp;lt;Integer..."
     } ,
