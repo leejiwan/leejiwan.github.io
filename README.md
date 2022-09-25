@@ -1,7 +1,7 @@
 # plainwhite
 
 -jekyll pagination v2를 github에서 지원하지 않아 소스를 분리해서 올림
-!!! \_site 밑에 있는 소스가 실제 구동하는 소스
+(\_site) 밑에 있는 소스가 실제 구동하는 소스
 
 -bundle exec jekyll serve
 
