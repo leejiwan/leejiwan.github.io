@@ -1,15 +1,15 @@
 [
   
     {
-      "title"    : "react hook",
-      "title-lower"    : "react hook",
+      "title"    : "xml vs json",
+      "title-lower"    : "xml vs json",
       "sub-titile" : "",
       "sub-titile-lower" : "",
       "categories" : "Javascript",
       "tags"     : "",
-      "url"      : "/xmlVSjson/",
-      "date"     : "2022-08-14 03:30:00 +0900",
-      "content"     : "      함수형 컴포넌트에서도 상태 관리를 할 수 있는 useState        리액트 컴포넌트 개발방식은 두 개 클래스형 컴포넌트, 함수형 컴포넌트state나 life cylcle 사용시 클래스형 사용해옴        동적인 상태값을 state라고 부름 컴포넌트으 상태값이 바뀔 경우 상태를 관리해주어야 함16.8 버전부터 hooks 기능 도입하..."
+      "url"      : "/xmlVSjson-copy/",
+      "date"     : "2022-09-28 03:30:00 +0900",
+      "content"     : "JSON과 XML의 공통점JSON과 XML은 다음과 같은 공통점을 가지고 있습니다.      둘 다 데이터를 저장하고 전달하기 위해 고안되었습니다.        둘 다 기계뿐만 아니라 사람도 쉽게 읽을 수 있습니다.        둘 다 계층적인 데이터 구조를 가집니다.        둘 다 다양한 프로그래밍 언어에 의해 파싱될 수 있습니다.       ..."
     } ,
   
     {
@@ -21,7 +21,19 @@
       "tags"     : "",
       "url"      : "/react-hook/",
       "date"     : "2022-08-14 03:30:00 +0900",
-      "content"     : "      함수형 컴포넌트에서도 상태 관리를 할 수 있는 useState        리액트 컴포넌트 개발방식은 두 개 클래스형 컴포넌트, 함수형 컴포넌트state나 life cylcle 사용시 클래스형 사용해옴        동적인 상태값을 state라고 부름 컴포넌트으 상태값이 바뀔 경우 상태를 관리해주어야 함16.8 버전부터 hooks 기능 도입하..."
+      "content"     : "  함수형 컴포넌트에서도 상태 관리를 할 수 있는 useState      리액트 컴포넌트 개발방식은 두 개 클래스형 컴포넌트, 함수형 컴포넌트state나 life cylcle 사용시 클래스형 사용해옴        동적인 상태값을 state라고 부름 컴포넌트으 상태값이 바뀔 경우 상태를 관리해주어야 함16.8 버전부터 hooks 기능 도입하여 함수형 ..."
+    } ,
+  
+    {
+      "title"    : "JSX",
+      "title-lower"    : "jsx",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "Javascript",
+      "tags"     : "",
+      "url"      : "/jsx/",
+      "date"     : "2022-08-01 03:30:00 +0900",
+      "content"     : "  하나의 부모 Dom 트리 구조로 이루어져야함/*가능*/function test() {    return(        &amp;lt;div&amp;gt;            &amp;lt;div&amp;gt;할룽&amp;lt;/div&amp;gt;            &amp;lt;div&amp;gt;할룽2&amp;lt;/div&amp;gt;   ..."
     } ,
   
     {

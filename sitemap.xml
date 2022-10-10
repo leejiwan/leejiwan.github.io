@@ -6,16 +6,21 @@
                 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
         <url>
             <loc>http://leejiwan.github.io</loc>
-	    <lastmod>2022-10-01T23:02:02+09:00</lastmod>
+	    <lastmod>2022-10-10T14:48:24+09:00</lastmod>
             <priority>1.00</priority>
         </url><url>
-                <loc>http://leejiwan.github.io/xmlVSjson/</loc>
-                <lastmod>2022-08-14T03:30:00+09:00</lastmod>
+                <loc>http://leejiwan.github.io/xmlVSjson-copy/</loc>
+                <lastmod>2022-09-28T03:30:00+09:00</lastmod>
                 <changefreq>weekly</changefreq>
                 <priority>0.80</priority>
             </url><url>
                 <loc>http://leejiwan.github.io/react-hook/</loc>
                 <lastmod>2022-08-14T03:30:00+09:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>http://leejiwan.github.io/jsx/</loc>
+                <lastmod>2022-08-01T03:30:00+09:00</lastmod>
                 <changefreq>weekly</changefreq>
                 <priority>0.80</priority>
             </url><url>
